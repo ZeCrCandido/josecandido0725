@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --cor-fundo: #0f172a;
+    --cor-cartao: #1e293b;
+    --cor-primaria: #38bdf8;
+    --cor-texto: #f8fafc;
+}
+
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.introducao h1 {
+    font-size: 50px;
+    color: azure;
+    padding: 10px;
+
+}
+
+.introducao p {
+    color: var(--cor-primaria);
+}
+
+body {
+    font-family: "Comic Neue";
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--cor-cartao);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-primaria);
+}
+
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: x-large;
+}
+
+nav a:hover {
+    color: var(--cor-primaria);
+}
+
+img {
+    max-width: 1350px;
+    border-radius: 8px;
+    display: block;
+    margin: 15px 0;
+}
+
+
+.lista {
+    max-height: 1200px;
+    max-width: 1200px;
+    margin-top: 200px;
+    padding: 20px;
+    background-color: var(--cor-cartao);
+}
+
+.lista h2 {
+    font-size: 40px;
+    color: var(--cor-primaria);
+}
+
+.lista ul{
+    color: var(--cor-texto);
+    line-height: 35px;
+    font-size: larger;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    background: var(--cor-fundo);
+    border: 1px solid #334155;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--cor-primaria);
+    columns: var(--cor-fundo);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+@keyframes aparecer {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.animar {
+    animation: aparecer 0.8s ease-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #7dd3fc;
+}
+
+tr:hover {
+    background-color: #334155;
+    transition: 0.3s;
+}
