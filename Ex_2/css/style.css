@@ -1,0 +1,30 @@
+.card-img-container {
+            width: 100%;
+            background-color: #f8f9fa; /* Fundo leve para caso a imagem mude de proporção */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto; /* Deixa a altura ajustar-se à imagem */
+            max-height: 350px; /* Limite máximo para não ficar gigante em ecrãs grandes */
+            object-fit: contain; /* Garante que nada é cortado */
+        }
+
+        .card-body { 
+            display: flex; 
+            flex-direction: column; 
+        }
+
+        .card-text { 
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 4em;
+        }
+
+         .sc-player { border: none; height: 120px; width: 100%; }
